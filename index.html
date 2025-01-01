@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akmal Faqih - Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #E62E2D;
+            --text-color: #333;
+            --bg-light: #f5f5f5;
+            --spacing: 2rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header Styles */
+        header {
+            padding: 2rem 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .nav-links a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: 4rem 0;
+            align-items: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-image: url('https://od.lk/s/NDlfMzQ1NjU2ODVf/resized_image_512x512_new.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-content h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        /* Areas of Work */
+        .areas {
+            padding: 4rem 0;
+            background-color: var(--bg-light);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .area-item h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Education & Accolades */
+        .education-accolades {
+            padding: 4rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .education-item, .accolade-item {
+            margin-bottom: 2rem;
+        }
+
+        .education-item h3, .accolade-item h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Experience Section */
+        .experience {
+            padding: 4rem 0;
+            background-color: var(--bg-light);
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+        }
+
+        .experience-item h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero, .areas-grid, .education-accolades, .experience-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <div class="logo">AKMAL FAQIH</div>
+            <div class="nav-links">
+                <a href="about-me.html">About Me</a>
+                <a href="past-works.html">Past Works</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <div class="hero-content">
+            <h1>Akmal Faqih Imani</h1>
+            <p>I am a Digital Business student at Universitas Padjadjaran with extensive experience in consulting and business competitions. Currently focused on delivering strategic solutions across various industries including water management, banking, and shipping.</p>
+            <p>Based in Bandung, Indonesia, I combine my academic excellence with practical consulting experience and a strong track record in business competitions.</p>
+            <a href="contact.html" class="btn">Get in touch</a>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <section class="areas">
+        <div class="container">
+            <h2 class="section-title">Areas of Expertise</h2>
+            <div class="areas-grid">
+                <div class="area-item">
+                    <h3>Business Consulting</h3>
+                    <p>Experienced in delivering strategic solutions across multiple industries, with expertise in performance evaluation, feasibility studies, and organizational development.</p>
+                </div>
+                <div class="area-item">
+                    <h3>Business Competition</h3>
+                    <p>Proven track record in business plan, marketing plan, and case competitions, with multiple national and international achievements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education-accolades container">
+        <div class="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3>Universitas Padjadjaran</h3>
+                <p class="subtitle">BSc in Digital Business (2022-Present)</p>
+                <p>GPA: 3.73/4.00</p>
+            </div>
+            <div class="education-item">
+                <h3>SMAN 23 Bandung</h3>
+                <p class="subtitle">Science Major (2019-2022)</p>
+            </div>
+        </div>
+        <div class="accolades">
+            <h2 class="section-title">Recent Achievements</h2>
+            <div class="accolade-item">
+                <h3>DigCofest Business Case Competition</h3>
+                <p>1st Place Winner 2024</p>
+            </div>
+            <div class="accolade-item">
+                <h3>SEAA-PEREGRINE International Case Competition</h3>
+                <p>2nd Place Winner 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <h3>Consultant Intern</h3>
+                    <p class="subtitle">Nanno Consulting Firm | 2023-2024</p>
+                    <p>Led multiple consulting projects across various industries, delivering strategic solutions.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Consultant Intern</h3>
+                    <p class="subtitle">LMFEB Unpad | 2023-2024</p>
+                    <p>Developed strategic initiatives through comprehensive internal and external analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Connect with me</p>
+            <div class="social-links">
+                <a href="contact.html"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/akmal-faqih-567131247/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://bit.ly/PortofolioAkmalf"><i class="fas fa-folder"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
